@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 14px; /* Reduce base font size from default 16px */
+  }
+  
+  body {
+    @apply bg-secondary-white text-secondary-softBlack;
+    font-size: 14px; /* Ensure consistent base font size */
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-orange text-white px-4 py-2 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-lightGrey text-primary-charcoal px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition-all duration-300 border border-gray-300 text-sm;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-orange focus:border-transparent transition-all duration-300 text-sm;
+  }
+  
+  .section-padding {
+    @apply py-8 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-custom {
+    @apply max-w-6xl mx-auto;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-orange to-orange-600 bg-clip-text text-transparent;
+  }
+  
+  .bg-gradient-primary {
+    @apply bg-gradient-to-r from-primary-orange to-orange-600;
+  }
+} 
