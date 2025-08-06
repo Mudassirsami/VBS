@@ -39,9 +39,7 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="space-y-3">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">VPS</span>
-              </div>
+              <img src="/assets/logo vbs.jpg" alt="VBS Logo" className="w-8 h-8 rounded-lg" />
               <span className="text-lg font-bold">VPS Supplier</span>
             </div>
             <p className="text-gray-300 text-xs leading-relaxed">

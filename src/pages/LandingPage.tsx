@@ -142,14 +142,12 @@ const LandingPage: React.FC = () => {
             >
               <h1 className="text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-lg">
                 Your Trusted
-                <span className="block text-yellow-300">Construction</span>
-                Supply Partner
+                <span className="block text-yellow-300">Construction Supply Partner</span>
               </h1>
               <p className="text-xl text-orange-100 leading-relaxed max-w-xl">
-                Connect with verified suppliers and buyers in the construction industry. <br />
-                <span className="font-medium">Quality materials, secure transactions, and reliable delivery.</span>
+                Empowering your projects with quality materials, secure transactions, and reliable delivery—trusted by professionals across the industry.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 mt-6">
                 <Link to="/products" className="btn-primary bg-white text-primary-orange hover:bg-gray-100 shadow-md font-semibold text-lg px-8 py-3 rounded-lg transition-all duration-200">
                   Browse Products
                 </Link>
